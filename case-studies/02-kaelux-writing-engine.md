@@ -43,9 +43,9 @@ This diagram shows the conceptual ownership boundaries at portfolio level. It is
 
 ```mermaid
 flowchart LR
-    A[Writer intent / workflow] --> B[Neuro mode\nExecution path]
-    B --> C[Companion\nInteraction / evaluation filter]
-    C --> D[Context envelope\nCanon + bounded thread state]
+    A[Writer intent / workflow] --> B[Neuro mode<br/>Execution path]
+    B --> C[Companion<br/>Interaction / evaluation filter]
+    C --> D[Context envelope<br/>Canon + bounded thread state]
     D --> E[Provider / runtime adapter]
     E --> F[Model response]
     F --> G{Evidence layer}
