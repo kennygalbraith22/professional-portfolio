@@ -1,0 +1,12 @@
+# OS/editor artifacts
+.DS_Store
+Thumbs.db
+*.swp
+*.tmp
+
+# Local/private working material
+.local/
+private/
+drafts-private/
+.env
+.env.*
