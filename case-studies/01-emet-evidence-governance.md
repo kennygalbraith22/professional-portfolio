@@ -40,6 +40,30 @@ The core operating principle is simple:
 
 > **Implemented is not the same as integrated. Integrated is not the same as certified. Certified is not automatically the same as deployed or released.**
 
+## Simplified evidence flow
+
+This is a sanitized portfolio view of the reasoning flow, not the internal Emet implementation.
+
+```mermaid
+flowchart LR
+    A[Requirement / authority] --> B[Implementation change]
+    B --> C[Proof plan]
+    C --> D{Evidence result}
+    D -->|Accepted| E{Semantic / visual judgment required?}
+    D -->|Failed| F[Bounded defect correction]
+    D -->|Unknown / interrupted| G[Recovery and state reconciliation]
+    E -->|No| H[Acceptance decision]
+    E -->|Yes| I[Human review]
+    I --> H
+    F --> C
+    G --> C
+    H --> J{Relevant input changed later?}
+    J -->|No| K[Reuse valid evidence]
+    J -->|Yes| C
+```
+
+The important idea is that proof has a lifecycle. A failure can belong to implementation, proof, environment, recovery, or an unsupported assumption; those categories should not automatically trigger the same response.
+
 ## A representative lesson: requirement/evaluation parity
 
 One major behavioral-certification effort exposed a subtle problem. Long-form requirements and evaluation expectations existed, but not every inspected implementation or review artifact carried the complete requirement context.
@@ -86,6 +110,8 @@ have not changed in a way that affects the supported claim.
 The inverse also matters: matching code or artifact hashes alone are not enough when an applicable environment, policy, dependency, or rubric changed.
 
 This became an evidence-reuse/invalidation problem rather than a "rerun everything" problem.
+
+A small runnable, synthetic example of that decision model is available in [`../demo/`](../demo/README.md). It intentionally contains no private Emet source code or project evidence.
 
 ## My role
 
