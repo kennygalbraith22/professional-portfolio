@@ -1,0 +1,14 @@
+{
+  "authority_revision": "A3",
+  "contract_revision": "C7",
+  "evaluation_revision": "E2",
+  "environment": "preview",
+  "changed_dependencies": [
+    "provider_contract",
+    "quota_accounting"
+  ],
+  "requires_fresh_evidence": [
+    "preview-provider-identity"
+  ],
+  "contradicted_claims": []
+}

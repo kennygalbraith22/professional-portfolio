@@ -37,6 +37,27 @@ The Writing Engine work represented in this portfolio includes:
 - behavioral certification combining automated execution with human review;
 - explicit separation between implementation, certification, Preview verification, and Production release.
 
+## Simplified companion-system view
+
+This diagram shows the conceptual ownership boundaries at portfolio level. It is not a source-code map or publication of private implementation details.
+
+```mermaid
+flowchart LR
+    A[Writer intent / workflow] --> B[Neuro mode<br/>Execution path]
+    B --> C[Companion<br/>Interaction / evaluation filter]
+    C --> D[Context envelope<br/>Canon + bounded thread state]
+    D --> E[Provider / runtime adapter]
+    E --> F[Model response]
+    F --> G{Evidence layer}
+    G -->|Deterministic| H[Contract / schema / persistence checks]
+    G -->|Semantic| I[Human behavioral review]
+    H --> J[Acceptance state]
+    I --> J
+    J --> K[Continuity / product experience]
+```
+
+The key architectural idea is that several controls may influence the same output while still owning different responsibilities.
+
 ## Companion behavior: separate execution path from evaluation filter
 
 One architectural lesson was that two concepts that both influence model behavior should not automatically be allowed to blur together.

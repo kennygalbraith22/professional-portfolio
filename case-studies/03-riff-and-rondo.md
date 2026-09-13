@@ -40,6 +40,24 @@ Riff & Rondo work represented in this portfolio includes:
 - automated tests and CI support;
 - release-readiness and current-state revalidation work.
 
+## Simplified progression-authority view
+
+This is a conceptual portfolio diagram, not a publication of the private implementation.
+
+```mermaid
+flowchart LR
+    A[Practice activity] --> B[Learner feedback / repetition]
+    C[Campaign attempt] --> D[Authenticated submission]
+    D --> E{Authoritative guards}
+    E -->|Invalid / duplicate / below rule| F[Reject progression change]
+    E -->|Accepted| G[Durable campaign state]
+    G --> H[Unlocks / dashboard / learner-visible progress]
+    F --> I[Return bounded feedback]
+    B -. does not grant authority .-> G
+```
+
+The key boundary is intentional: a useful Practice interaction should not silently become authoritative Campaign progression.
+
 ## Practice is not authority
 
 One important architectural distinction is that practice activity and authoritative campaign advancement serve different purposes.

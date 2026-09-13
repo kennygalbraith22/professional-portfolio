@@ -1,0 +1,54 @@
+[
+  {
+    "id": "auth-session-authority",
+    "claim": "Authentication and session authority remain enforced",
+    "status": "accepted",
+    "dependencies": [
+      "auth_session"
+    ],
+    "authority_revision": "A3",
+    "contract_revision": "C7",
+    "evaluation_revision": "E2",
+    "environment": "preview",
+    "portable_across_environments": false
+  },
+  {
+    "id": "preview-provider-identity",
+    "claim": "Preview uses the intended provider/runtime identity",
+    "status": "accepted",
+    "dependencies": [
+      "provider_contract"
+    ],
+    "authority_revision": "A3",
+    "contract_revision": "C7",
+    "evaluation_revision": "E2",
+    "environment": "preview",
+    "portable_across_environments": false
+  },
+  {
+    "id": "companion-behavior",
+    "claim": "Companion behavior meets the accepted semantic rubric",
+    "status": "accepted",
+    "dependencies": [
+      "companion_behavior"
+    ],
+    "authority_revision": "A3",
+    "contract_revision": "C7",
+    "evaluation_revision": "E1",
+    "environment": "preview",
+    "portable_across_environments": false
+  },
+  {
+    "id": "production-release-authority",
+    "claim": "Production release is authorized",
+    "status": "blocked",
+    "dependencies": [
+      "release_authority"
+    ],
+    "authority_revision": "A3",
+    "contract_revision": "C7",
+    "evaluation_revision": "E2",
+    "environment": "production",
+    "portable_across_environments": false
+  }
+]

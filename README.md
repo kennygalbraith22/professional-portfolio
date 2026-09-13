@@ -12,6 +12,15 @@ Alongside that career, I independently direct AI-assisted product development ac
 
 This portfolio focuses on that intersection: **operational discipline applied to AI-assisted technical delivery**.
 
+## 30-second view
+
+| Area | What I bring |
+| --- | --- |
+| **Operational Excellence** | Equipment ownership, TPM/Autonomous Maintenance, defect management, root-cause thinking, standardized work, reliability, and frontline capability development |
+| **Technical Program Delivery** | Requirements, dependency mapping, acceptance criteria, bounded execution, failure investigation, and evidence-backed closure |
+| **Applied AI Delivery** | Multi-provider AI product work, behavioral evaluation, persistence/continuity boundaries, AI-assisted implementation, and explicit claim/release states |
+| **Validation** | Deterministic tests, negative paths, recovery, human semantic review, environment-specific proof, and evidence reuse/invalidation |
+
 ## Selected case studies
 
 | Project | Focus | Case study |
@@ -20,6 +29,27 @@ This portfolio focuses on that intersection: **operational discipline applied to
 | **KaelUX Writing Engine** | Multi-provider AI companions, continuity, behavioral evaluation, and controlled release boundaries | [Building and validating a governed AI writing system](case-studies/02-kaelux-writing-engine.md) |
 | **Riff & Rondo** | Music-learning progression, authoritative persistence, notation, learner UX, and testing | [Building reliable progression into a learning product](case-studies/03-riff-and-rondo.md) |
 
+Each case study now includes a simplified visual system diagram. The diagrams are intentionally sanitized and communicate ownership/decision boundaries rather than private implementation detail.
+
+## Runnable synthetic demonstration
+
+The portfolio includes one small executable example: [`demo/`](demo/README.md).
+
+It demonstrates an evidence-reuse decision model by comparing a synthetic change manifest with prior evidence and returning:
+
+- `REUSE` when accepted evidence still supports the claim;
+- `RERUN` when a relevant authority, dependency, contract, environment, evaluation rule, freshness requirement, or contradiction changed;
+- `UNSUPPORTED` when the prior record was never accepted evidence for the claim.
+
+Run it with only the Python standard library:
+
+```bash
+python demo/evidence_reuse_demo.py demo/sample_change.json demo/sample_evidence.json
+python -m unittest demo.test_evidence_reuse_demo
+```
+
+This is a teaching example derived from the portfolio methodology, **not** a release of Emet source code.
+
 ## What this portfolio is meant to demonstrate
 
 - **Operational excellence:** ownership, standards, root-cause thinking, defect containment, and continuous improvement.
@@ -27,6 +57,28 @@ This portfolio focuses on that intersection: **operational discipline applied to
 - **AI-assisted development:** using AI as a high-leverage implementation tool without treating generated output as automatic proof.
 - **Validation discipline:** separating implementation, integration, certification, deployed proof, and release authority.
 - **Cross-functional thinking:** connecting product intent, technical behavior, user experience, privacy, persistence, and operational risk.
+
+## Repository map
+
+```text
+professional-portfolio/
+├── README.md
+├── ABOUT_MY_WORK.md
+├── AI_ASSISTED_WORK_DISCLOSURE.md
+├── NOTICE.md
+├── case-studies/
+│   ├── 01-emet-evidence-governance.md
+│   ├── 02-kaelux-writing-engine.md
+│   └── 03-riff-and-rondo.md
+├── demo/
+│   ├── evidence_reuse_demo.py
+│   ├── sample_change.json
+│   ├── sample_evidence.json
+│   └── test_evidence_reuse_demo.py
+└── evidence/
+    ├── methodology.md
+    └── claim-boundaries.md
+```
 
 ## How I work
 
