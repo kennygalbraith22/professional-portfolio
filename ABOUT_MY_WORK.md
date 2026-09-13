@@ -22,7 +22,9 @@ I do not begin with "what can the model generate?" I begin with questions that a
 
 ## Independent product work
 
-Since 2025 I have directed independent AI-assisted product development across the KaelUX ecosystem. The current portfolio represented here includes:
+Since 2025 I have directed independent AI-assisted product development work across KaelUX-related projects. This portfolio describes my technical contribution; it does not claim company ownership or company-binding commercial/public-release authority.
+
+The current portfolio represented here includes:
 
 ### KaelUX Writing Engine
 
@@ -44,7 +46,7 @@ My work is concentrated in the parts that determine whether the resulting system
 
 - problem framing and product intent;
 - requirements and acceptance criteria;
-- architecture and authority boundaries;
+- technical architecture, ownership, and authority boundaries within authorized scope;
 - task decomposition and sequencing;
 - prompt and implementation direction;
 - test and evaluation design;

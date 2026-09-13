@@ -70,7 +70,7 @@ That separation prevents a convenient client-side interaction from becoming the 
 
 ## Progression needs server-owned rules
 
-A representative campaign rule used a score threshold above 70 for progression.
+A representative campaign rule used a score threshold of **70 or higher** for progression.
 
 The important engineering point is not the specific number. It is that the progression decision belongs to the authoritative system rather than being inferred only by the interface.
 
@@ -82,6 +82,8 @@ That drove work around:
 - unlock state;
 - durable persistence;
 - tests that prove both accepted and rejected paths.
+
+The evidence reviewed for this portfolio does **not** establish a complete server-issued `start_attempt → submit_attempt` lifecycle. That remained a separate successor work item, so the existing progression proof is not used here to claim that broader lifecycle is complete.
 
 ## Testing the intended guard
 

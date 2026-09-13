@@ -6,8 +6,8 @@ This repository is intended to make selected professional work inspectable witho
 
 - I have a manufacturing background spanning defense and high-volume consumer production.
 - My experience includes frontline leadership, Autonomous Maintenance, Total Productive Maintenance, root-cause work, equipment reliability, training, and cross-functional improvement.
-- Since 2025 I have directed independent AI-assisted product development across KaelUX-related projects.
-- My responsibilities include requirements, architecture and authority decisions, implementation direction, testing/evaluation design, failure investigation, and evidence-backed acceptance decisions.
+- Since 2025 I have directed independent AI-assisted product development work across KaelUX-related projects.
+- My responsibilities include requirements, technical architecture and ownership/authority boundaries within authorized scope, implementation direction, testing/evaluation design, failure investigation, and evidence-backed acceptance decisions.
 - KaelUX Writing Engine work includes multi-provider AI behavior, structured context, persistence/continuity, companion evaluation, and controlled release-state separation.
 - One major companion behavioral-certification campaign exercised 343 cases; case count is not presented as a quality or productivity score.
 - Emet includes software-backed work for inspection, classification, proof planning, evidence reuse/invalidation, durable evidence records, and advisory review.
@@ -23,6 +23,7 @@ This repository is intended to make selected professional work inspectable witho
 - I am not claiming that automated tests alone establish subjective AI behavior or visual quality.
 - I am not claiming independent security-auditor, legal, or compliance credentials.
 - I am not treating historical planning material as proof that a future product or feature has been built.
+- I am not using this portfolio to claim company ownership or company-binding commercial/public-release authority for KaelUX LLC.
 
 ## Information intentionally excluded
 

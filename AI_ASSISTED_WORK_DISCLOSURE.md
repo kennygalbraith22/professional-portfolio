@@ -10,7 +10,7 @@ My contribution includes:
 
 - defining product and operational problems;
 - establishing requirements, constraints, and acceptance criteria;
-- mapping architecture, authority, and dependency boundaries;
+- mapping technical architecture, ownership/authority, and dependency boundaries within authorized scope;
 - breaking large objectives into executable work;
 - directing AI-assisted implementation;
 - reviewing generated changes and technical evidence;
