@@ -101,6 +101,7 @@ I am most interested in roles where **operational excellence, manufacturing or d
 
 - The case studies are **sanitized professional summaries**, not releases of private product source code or controlled company records.
 - Product code, internal evidence, credentials, user data, security-sensitive detail, and private project records are intentionally excluded.
+- This portfolio documents my technical contribution; it is not a claim of KaelUX LLC company ownership or company-binding commercial/public-release authority.
 - Current product/release state can change after a case study is written. The portfolio describes the demonstrated work and its stated evidence boundary rather than claiming every project is publicly released.
 - AI use and authorship boundaries are described in [AI_ASSISTED_WORK_DISCLOSURE.md](AI_ASSISTED_WORK_DISCLOSURE.md).
 - Validation and evidence practices are summarized in [evidence/methodology.md](evidence/methodology.md).
