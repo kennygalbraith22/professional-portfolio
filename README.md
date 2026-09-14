@@ -2,7 +2,7 @@
 
 **Operational Excellence | Manufacturing Transformation | AI-Assisted Product Delivery**
 
-> **Status:** Private portfolio draft under review. This repository is not yet intended for public distribution.
+>
 
 I turn operating problems into systems with clear ownership, practical standards, and evidence that the work holds up.
 
